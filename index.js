@@ -6,7 +6,7 @@ const pino = require('pino');
 const { BOT_TOKEN } = require("./config");
 const axios = require("axios");
 const premiumFile = './premiumuser.json';
-const ownerFile = './owneruser.json';
+const devFile = './devuser.json';
 const adminFile = './adminuser.json';
 let bots = [];
 
@@ -126,7 +126,7 @@ const saveJSON = (file, data) => {
 };
 
 // Muat ID owner dan pengguna premium
-let ownerUsers = loadJSON(ownerFile);
+let devUsers = loadJSON(devFile);
 let adminUsers = loadJSON(adminFile);
 let premiumUsers = loadJSON(premiumFile);
 
